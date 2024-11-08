@@ -66,7 +66,7 @@ stopifnot(packageVersion("spatialLIBD") >= "1.17.8")
 ## Download the spot-level data, which is a SpatialExperiment object
 spe <- spatialLIBD::fetch_data(type = "visiumStitched_brain_spe")
 #> snapshotDate(): 2024-04-29
-#> 2024-10-14 11:39:40.997043 loading file /users/neagles/.cache/R/BiocFileCache/feb652e603a7a_visiumStitched_brain_spe.rds%3Frlkey%3Dnq6a82u23xuu9hohr86oodwdi%26dl%3D1
+#> 2024-11-08 13:00:48.086572 loading file /users/neagles/.cache/R/BiocFileCache/f5fa60825608_visiumStitched_brain_spe.rds%3Frlkey%3Dnq6a82u23xuu9hohr86oodwdi%26dl%3D1
 
 ## Explore the stitched data
 spe
@@ -80,7 +80,8 @@ spe
 #> colnames(13965): AAACAACGAATAGTTC-1_V13B23-283_A1
 #>   AAACAAGTATCTCCCA-1_V13B23-283_A1 ... TTGTTTGTATTACACG-1_V13B23-283_D1
 #>   TTGTTTGTGTAAATTC-1_V13B23-283_D1
-#> colData names(40): sample_id in_tissue ... precast_k4 precast_k8
+#> colData names(43): sample_id in_tissue ... precast_k16_unstitched
+#>   precast_k24_unstitched
 #> reducedDimNames(1): PCA
 #> mainExpName: NULL
 #> altExpNames(0):
@@ -90,7 +91,7 @@ spe
 ## Show clustering results from PRECAST at k = 8
 spatialLIBD::vis_clus(
     spe,
-    clustervar = "precast_k8",
+    clustervar = "precast_k8_stitched",
     is_stitched = TRUE
 )
 ```
@@ -140,9 +141,10 @@ print(citation("visiumStitched"), bibtex = TRUE)
 #>   }
 #> 
 #> Eagles NJ, Bach S, Tippani M, Ravichandran P, Du Y, Miller RA, Hyde TM,
-#> Page SC, Martinowich K, Collado-Torres L (2024). "visiumStitched."
-#> _bioRxiv_. doi:10.1101/TODO <https://doi.org/10.1101/TODO>,
-#> <https://www.biorxiv.org/content/10.1101/TODO>.
+#> Page SC, Martinowich K, Collado-Torres L (2024). "visiumStitched." _BMC
+#> Genomics_. doi:10.1186/s12864-024-10991-y
+#> <https://doi.org/10.1186/s12864-024-10991-y>,
+#> <doi.org/10.1186/s12864-024-10991-y>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -150,9 +152,9 @@ print(citation("visiumStitched"), bibtex = TRUE)
 #>     title = {visiumStitched},
 #>     author = {Nicholas J. Eagles and Svitlana Bach and Madhavi Tippani and Prashanthi Ravichandran and Yufeng Du and Ryan A. Miller and Thomas M. Hyde and Stephanie C. Page and Keri Martinowich and Leonardo Collado-Torres},
 #>     year = {2024},
-#>     journal = {bioRxiv},
-#>     doi = {10.1101/TODO},
-#>     url = {https://www.biorxiv.org/content/10.1101/TODO},
+#>     journal = {BMC Genomics},
+#>     doi = {10.1186/s12864-024-10991-y},
+#>     url = {doi.org/10.1186/s12864-024-10991-y},
 #>   }
 ```
 

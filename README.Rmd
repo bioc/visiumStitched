@@ -71,7 +71,7 @@ spe
 ## Show clustering results from PRECAST at k = 8
 spatialLIBD::vis_clus(
     spe,
-    clustervar = "precast_k8",
+    clustervar = "precast_k8_stitched",
     is_stitched = TRUE
 )
 ```
