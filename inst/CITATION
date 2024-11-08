@@ -32,8 +32,8 @@ c(
             as.person("Leonardo Collado-Torres")
         ),
         year = "2024",
-        journal = "bioRxiv",
-        doi = "10.1101/TODO",
-        url = "https://www.biorxiv.org/content/10.1101/TODO"
+        journal = "BMC Genomics",
+        doi = "10.1186/s12864-024-10991-y",
+        url = "doi.org/10.1186/s12864-024-10991-y"
     )
 )
