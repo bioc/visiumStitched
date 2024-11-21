@@ -20,6 +20,8 @@
 #' @importFrom tibble rownames_to_column
 #' @importFrom Matrix Matrix
 #' @importFrom BiocGenerics cbind
+#' @importFrom SummarizedExperiment assays<-
+#' @importFrom SingleCellExperiment reducedDims reducedDims<-
 #' @export
 #' @author Nicholas J. Eagles
 #'
