@@ -12,7 +12,7 @@ issues](https://img.shields.io/github/issues/LieberInstitute/visiumStitched)](ht
 pulls](https://img.shields.io/github/issues-pr/LieberInstitute/visiumStitched)](https://github.com/LieberInstitute/visiumStitched/pulls)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![R-CMD-check-bioc](https://github.com/LieberInstitute/visiumStitched/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/LieberInstitute/visiumStitched/actions/workflows/check-bioc.yml)
+[![check-bioc](https://github.com/LieberInstitute/visiumStitched/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/LieberInstitute/visiumStitched/actions/workflows/check-bioc.yml)
 [![Codecov test
 coverage](https://codecov.io/gh/LieberInstitute/visiumStitched/branch/devel/graph/badge.svg)](https://app.codecov.io/gh/LieberInstitute/visiumStitched?branch=devel)
 [![Bioc release
