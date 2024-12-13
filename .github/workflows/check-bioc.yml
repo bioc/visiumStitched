@@ -146,7 +146,7 @@ jobs:
           ## Latest curl
           brew install curl pkg-config
 
-      - name: Install macOS system dependencies
+      - name: Install macOS curl from source
         if: matrix.config.os == 'macOS-latest'
         run: |
           message(paste('****', Sys.time(), 'installing curl from source ****'))
